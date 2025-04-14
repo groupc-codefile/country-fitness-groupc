@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-image: url('./gym3.jpg');
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 80px 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #f39c12;
+}
+
+.membership-plans {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    margin-bottom: 60px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.plan p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    background-color: #e67e22;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plan button:hover {
+    background: linear-gradient(135deg, #e67e22, #f39c12);
+}
+
+
+.membership-form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin-bottom: 60px;
+}
+
+.membership-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.membership-form input,
+.membership-form select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #f39c12;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.membership-form button.submit-btn {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.membership-form button.submit-btn:hover {
+    background: linear-gradient(135deg, #e67e22, #f39c12);
+}
+
+
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .plan {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .membership-form form {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | Country Fitness</title>
+    <link rel="stylesheet" href="stylesmembership.css">
+    <script src="https://js.stripe.com/v3/"></script> 
+</head>
+<body>
+    <header>
+        <h1>Country Fitness</h1>
+        <p>Your Fitness Journey Starts Here</p>
+    </header>
+
+    <main>
+        <section class="membership-plans">
+            <h2>Choose Your Plan</h2>
+            <div class="plans">
+                <div class="plan">
+                    <h3>Basic</h3>
+                    <p>Access to gym equipment</p>
+                    <p>Price: <strong>$20/month</strong></p>
+                    <button class="join-btn" onclick="startPayment('price_1RBNsCPKjvKIXR1Az05PaTFR')">Join Now</button>
+                </div>
+                <div class="plan">
+                    <h3>Premium</h3>
+                    <p>Includes group classes + gym access</p>
+                    <p>Price: <strong>$40/month</strong></p>
+                    <button class="join-btn" onclick="startPayment('price_1RBNtfPKjvKIXR1A7VSSfoOu')">Join Now</button>
+                </div>
+                <div class="plan">
+                    <h3>VIP</h3>
+                    <p>Personal trainer + all benefits</p>
+                    <p>Price: <strong>$60/month</strong></p>
+                    <button class="join-btn" onclick="startPayment('price_1RBNu7PKjvKIXR1AMXuJOE7E')">Join Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const stripe = Stripe('pk_test_51RBLulPKjvKIXR1AXHJGmIsD6n888IsdhuhaivlQf5PkH6q57hwU1KfTrouS7rRK4NiTnYgPajee8Li5V30hyOQD003lczaYBh')
+
+        function startPayment(priceId) {
+            fetch('http://localhost:4242/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ priceId: priceId }),
+            })
+            .then(response => response.json())
+            .then(session => {
+                return stripe.redirectToCheckout({ sessionId: session.id });
+            })
+            .then(result => {
+                if (result.error) {
+                    alert(result.error.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

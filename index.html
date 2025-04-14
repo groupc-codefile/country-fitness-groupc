@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5">
+    <title>Home | Country Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Welcome to <span>Country Fitness</span></h1>
+            <p>Your Ultimate Destination for Health & Strength</p>
+            <p id="datetime"></p>
+            <button class="cta" onclick="window.location.href='membership.html'">Join Now</button>
+            <button class="cta" onclick="window.location.href='menu.html'">Menu</button>
+        </div>
+
+        <nav>
+            <ul id="menu" class="hidden">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="trainers.html">Our Trainers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="features">
+            <h2>Why Choose Country Fitness?</h2>
+            <div class="feature-cards">
+                <div class="card">💪 24/7 Gym Access</div>
+                <div class="card">🏋️ Professional Trainers</div>
+                <div class="card">🔥 State-of-the-Art Equipment</div>
+                <div class="card">🏆 Group Fitness Classes</div>
+                <div class="card">🥗 Meal & Nutrition Plans</div>
+                <div class="card">💰 Special Membership Discounts</div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 Country Fitness | All Rights Reserved</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+   
+    <div id="cookieConsent" class="cookie-consent">
+        <p>🍪 We use cookies to improve your experience. By using our site, you accept cookies.</p>
+        <button id="acceptCookies">Accept</button>
+        <button id="cookieSettings">Settings</button>
+    </div>
+
+    <div id="cookieSettingsModal" class="cookie-settings-modal">
+        <h2>Cookie Settings</h2>
+        <p>Manage your cookie preferences below:</p>
+        <label>
+            <input type="checkbox" id="cookieNecessary" checked disabled> Necessary Cookies
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="cookieAnalytics"> Analytics Cookies
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="cookieMarketing"> Marketing Cookies
+        </label>
+        <br>
+        <button id="savePreferences">Save Preferences</button>
+        <button id="closeSettings">Close</button>
+    </div>
+
+</body>
+</html>
