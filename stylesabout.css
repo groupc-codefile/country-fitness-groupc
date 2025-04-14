@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+
+body {
+    font-family: 'Playfair Display', serif;
+   background-image: url(./gym8.jpg);
+   background-position: center,cover;
+}
+
+
+.hero {
+    background: url('https://via.placeholder.com/1600x800');
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: slideUp 1.2s ease-out;
+}
+
+.hero h1 span {
+    color: #ff6f61;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.hero .cta {
+    background-color: #ff6f61;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #d85547;
+}
+
+
+.about {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about h2 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-out;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.section-title {
+    width: 45%;
+}
+
+.section-title h3 {
+    font-size: 2.2rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Team Section */
+.team {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin-top: 50px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.core-values {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.core-values h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.core-values ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: #555;
+    padding: 0;
+}
+
+.core-values li {
+    margin-bottom: 20px;
+}
+
+
+.cta {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.cta h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: #ff6f61;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

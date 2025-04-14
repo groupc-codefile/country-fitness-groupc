@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Successful | Country Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="success.css"> 
+</head>
+<body>
+
+<div class="container">
+  <h1>🎉 Payment Successful!</h1>
+  <p>Thank you for joining <strong>Country Fitness</strong>!</p>
+  <a href="Home.html" class="btn">Go to Home</a>
+</div>
+
+
+<script>
+  for (let i = 0; i < 100; i++) {
+    let confetti = document.createElement('div');
+    confetti.classList.add('confetti');
+    confetti.style.left = Math.random() * window.innerWidth + 'px';
+    confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+    confetti.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    document.body.appendChild(confetti);
+  }
+</script>
+
+</body>
+</html>

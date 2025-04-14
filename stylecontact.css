@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  body {
+    background-image:url('./gym1.png');
+    color: #333;
+  }
+  
+  .contact-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contact-header h1 {
+    font-size: 3rem;
+    color: #e67e22;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+ 
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  
+  .contact-form {
+    flex: 1 1 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #f39c12;
+  }
+  
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #d35400;
+  }
+  
+ 
+  .contact-info {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 20px;
+    color: #f39c12;
+  }
+  
+  .contact-info p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #e67e22;
+  }
+  
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #e67e22;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #f39c12;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .contact-wrapper {
+      flex-direction: column;
+    }
+  }
+  
