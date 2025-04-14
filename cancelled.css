@@ -1,0 +1,46 @@
+body {
+    background-image:url(./gym1.png) ;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: shake 0.5s infinite alternate;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: white;
+    color: #ff4e50;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4e50;
+    color: white;
+    border: 2px solid white;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
